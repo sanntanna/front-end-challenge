@@ -1,0 +1,56 @@
+@import '../../helpers/css/common.styl'
+
+@media $small-only
+    .header
+        left 0
+        top 0
+        background #ffffff
+        border-bottom 1px solid #ccc
+        position fixed
+        width 100%
+        z-index 1
+    
+    .inner
+        display flex
+        align-items center
+        justify-content center
+        height 55px
+
+    .headerLogo
+        text-align center
+        width 70%
+
+        svg 
+            height 20px
+            max-width 100%
+            width auto
+    
+    .shopping
+        display flex
+        position relative
+        justify-content flex-end
+    
+    .shoppingIcon
+        cursor pointer
+        font-size 13px
+        text-transform uppercase
+    
+    .shoppingTotalItemsAdded
+        position absolute
+        right -16px
+        font-size 13px
+        color $birman
+        text-decoration none
+        font-weight 200
+        top 10px
+        background $angel
+        padding 4px
+        border-radius 50%
+        width 10px
+        height 10px
+        line-height 10px
+        text-align center
+
+@media $large-only
+    .inner
+        height 100px

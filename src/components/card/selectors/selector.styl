@@ -1,0 +1,42 @@
+@import '../../../helpers/css/common.styl'
+
+@media $small-only
+    .types
+        color $acioli
+        font-weight 400
+        font-size 12px
+        margin-bottom 0
+    
+    .typesValue
+        color $mazzafera
+        margin-left 5px
+        font-weight 500
+        font-size 13px
+
+    .sizesContainer
+        padding 10px 0
+    
+    .sizes
+        display inline-flex
+        color $mazzafera
+        align-items center
+        border 1px solid $dener
+        border-radius 50%
+        font-size 14px
+        height 40px
+        justify-content center
+        text-decoration none
+        width 40px
+        margin 0 3px
+        cursor pointer
+
+        &.isActive
+            background-color $mazzafera
+            color $birman
+
+    .warning
+        color $angel
+        font-style italic
+        padding 10px
+        font-size 12px
+        font-weight 400

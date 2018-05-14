@@ -1,0 +1,141 @@
+@import '../../helpers/css/common.styl'
+
+@media $small-only
+    .container
+        background-color $birman
+        box-shadow -0.2rem 0 0.2rem rgba(0,0,0,.1)
+        position fixed
+        z-index 2
+        width 320px
+        min-height 100%
+        right -100%
+        top 0
+        transition right .3s cubic-bezier(.1,.62,.39,.67)
+
+    .isVisible
+        right 0
+    
+    .header
+        position relative
+        text-align center
+        display flex
+        align-items center
+        justify-content center
+        border-bottom 1px solid $dener
+        height 45px
+    
+    .close
+        position absolute
+        left 10px
+        font-size 20px
+        color $dener
+        text-decoration none
+        font-weight 200
+        cursor pointer
+    
+    .title
+        text-transform uppercase
+        font-size 18px
+        font-weight 200
+
+    .list
+        list-style none
+        margin 0
+        padding 0
+        overflow auto
+        max-height 392px
+
+    .listItem
+        border-bottom 1px solid $dener
+    
+    .listItemContainer
+        padding 10px
+        display flex
+        align-items center
+    
+    .listItemImage
+        width 100px
+        text-align center
+
+        img 
+            max-width 60px
+        
+    .listItemInfo
+        position relative
+        flex 1 1 0
+    
+    .listItemInfoName
+        font-size 11px
+        font-weight 200
+    
+    .listItemInfoDetails
+        display flex
+        font-size 12px
+        color $acioli
+        font-weight 200
+        margin-bottom 10px
+    
+    .listItemInfoDetailsSize
+        margin-right 10px
+    
+    .listItemInfoOptions
+        display flex
+        justify-content space-between
+        align-items center
+
+    .listItemInfoOptionsQuant
+        display flex
+        align-items center
+    
+    .listItemInfoCount
+        border 1px solid $dener
+        font-size 13px
+        cursor pointer
+        outline 0
+    
+    .listItemInfoCountNumber
+        padding 0 10px
+        font-size 14px
+
+    .listItemInfoOptionsPrice
+        color $acioli
+        font-size 14px
+    
+    .listItemClose
+        position absolute
+        right 0
+        font-size 13px
+        color $birman
+        text-decoration none
+        font-weight 200
+        top 0
+        background $angel
+        padding 4px
+        border-radius 50%
+        width 10px
+        height 10px
+        line-height 10px
+        text-align center
+
+    .footerTotal
+        display flex
+        color $mazzafera
+        justify-content space-between
+        padding 12px
+        background $weber
+        border-bottom 1px solid $pascolato
+    
+    .empty
+        display flex
+        align-items center
+        justify-content center
+        text-align center
+        flex 1 1 0
+        flex-direction column
+        padding 20px 0
+        text-transform uppercase
+        font-weight 200
+
+@media $large-only
+    .list
+        max-height 100%
