@@ -10,12 +10,15 @@ Using Webpack to make ES6 compatible with current browsers.
 ## Install
 
 **Install the dependencies in the local node_modules folder.**
+
 npm install 
 
 **Start node server**
+
 npm start
 
 **Unit Test**
+
 npm test
 
 
